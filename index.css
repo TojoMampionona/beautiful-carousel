@@ -1,0 +1,44 @@
+.btfc-carousel {
+    position: relative;
+    width:600px;
+    margin: auto;
+}
+.btfc-track-container {
+    overflow: hidden;
+}
+.btfc-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    padding: 0;
+}
+.btfc-slide {
+    min-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btfc-slide img{
+    width: 100%;
+    display: block;
+}
+.btfc-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+    padding: 0.5em 1em;
+    user-select: none;
+  }
+  
+  .btfc-btn.prev {
+    left: -20px;
+  }
+  
+  .btfc-btn.next {
+    right: -20px;
+  }
